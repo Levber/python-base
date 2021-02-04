@@ -4,5 +4,5 @@
 '''
 a = 1
 b = 2
-c = a +1if a<b else b<a
+c = a + 1 if a < b else b < a
 print(c)
