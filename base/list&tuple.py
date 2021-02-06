@@ -9,7 +9,7 @@ print(len(classmates))
 print(classmates[2])  # 用索引访问，超出索引范围时，报错IndexError
 classmates.insert(1, 'jack')  # 指定下标插入元素用insert（）方法
 print(classmates)
-classmates.append('王麻子')
+classmates.append('王麻子')  # append（）自动追加元素到末尾
 print(classmates)
 print('删除列表 “末尾” 的元素用pop()方法,也可以用索引的方式pop（1）删除')
 class2 = classmates.pop()
@@ -30,7 +30,7 @@ t = (1, 2)  # 元组不可变，所以没有append，insert等方法
 print(t)
 t1 = ()  # 定义一个空元组
 print(t1)
-t2 = (1,)  # 如果元组中只有一个元素，则需要用逗号
+t2 = (1,)  # 如果元组中只有一个元素，则需要用逗号，因为括号()既可以表示tuple，又可以表示数学公式中的小括号
 print('tuple的指向永远不变，比如‘a’不可变为‘B’，但里面的list本身是可以改变的')
 t3 = ('a', 'b', ['A', 'B'])
 t3[2][0] = 'X'

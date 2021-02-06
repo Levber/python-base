@@ -1,13 +1,13 @@
 # 廖雪峰教程
 # 字符串
-print(ord('A'))
+print(ord('A'))  # ord（）函数获取对应字符串的数字编码
 print(ord('中'))
-print(chr(25991))
+print(chr(25991))  # chr()函数把编码转换为对应的字符
 print('= =' * 20)
 # 二进制表示字符串
-print('\u4e2d\u6587')  # 得出结果：中文
-print('使用encode（）方法可以编码为指定的bytes字节')
-print('ABC'.encode('ascii'))
+print('\u4e2d\u6587')  # 打印二进制编码，得出结果：中文
+print('使用encode（）方法可以打印出指定编码类型的bytes字节')
+print('ABC'.encode('ascii'))  # 英文字符的byte字节是其本身
 print('中文'.encode('utf-8'))
 print('使用decode（）方法将字节流转换成字符串')
 print(b'ABC'.decode('ascii'))
